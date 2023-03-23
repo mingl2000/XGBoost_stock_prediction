@@ -33,8 +33,8 @@ yf.pdr_override()
 
 # --------------------------------------- GLOBAL PARAMETERS -------------------------------------------
 # Range of date to train and predict
-START = datetime(2008, 9, 1)
-END = datetime(2018, 10, 4)
+START = datetime(2013, 1, 1)
+END = datetime(2023, 3, 4)
 # ------------------------------------------------ CLASSES --------------------------------------------
 class UserInput:
     """
