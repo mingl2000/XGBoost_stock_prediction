@@ -12,7 +12,8 @@ import seaborn as sns
 import pandas as pd
 pd.core.common.is_list_like = pd.api.types.is_list_like
 import pandas_datareader.data as pdr
-import fix_yahoo_finance as yf
+#import fix_yahoo_finance as yf
+import yfinance as yf
 import xgboost
 from xgboost import XGBClassifier
 from time import sleep
@@ -28,6 +29,8 @@ from pprint import pprint
 import lightgbm as lgb
 import gc
 from itertools import chain
+yf.pdr_override()
+
 # --------------------------------------- GLOBAL PARAMETERS -------------------------------------------
 # Range of date to train and predict
 START = datetime(2008, 9, 1)
